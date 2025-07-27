@@ -4541,3 +4541,16 @@ p.service_text{
 .mil-button:hover span{
   transform: scale(1.2);
 }
+
+.socialmedia-icons img{
+  width: 32px;
+  margin: 0 5px;
+}
+
+.footer-menu-list li{
+  margin-bottom: 5px;
+}
+
+.contact-info li{
+  margin:  10px 0;
+}
