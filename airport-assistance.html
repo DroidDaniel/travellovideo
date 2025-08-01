@@ -307,23 +307,57 @@
                 <section id="blog">
                     <div class="container mil-p-120-120">
                         <div class="row">
+
+
+
                             <div class="col-lg-12">
+    <div class="mil-blog-card mil-blog-card-hori mil-mb-60">
+      
+      <!-- Updated Assistance Image with Video Button -->
+      <div class="assistance-pic mil-up">
+        <img src="img/photo/airport-assistance.jpg" alt="cover">
+        <button class="video-play-button" id="openModalBtn">▶</button>
+      </div>
 
-                                <div class="mil-blog-card mil-blog-card-hori mil-mb-60">
-                                    <div class="assistance-pic mil-up">
-                                        <img src="img/photo/airport-assistance.jpg" alt="cover">
-                                    </div>
-                                    <div class="mil-post-descr">
-                                        <h4 class="mil-up mil-mb-30">Your Stress-Free Travel Starts at the Airport</h4>
-                                        <p class="mil-post-text mil-up mil-mb-30">Navigating busy airports can be overwhelming —
-especially if you're traveling for the first time, with family,
-or on a tight schedule.</p>
-<h4 class="mil-up mil-mb-30"><span class="mil-thin">At</span> Travello International, <span class="mil-thin">we offer</span> personalized airport assistance services <span class="mil-thin">to make your journey smooth from the moment you arrive at the terminal.</span></h4>
-                                        
-                                    </div>
-                                </div>
+      <!-- YouTube Video Modal -->
+      <div class="modal-overlay" id="videoModal">
+        <div class="modal-content">
+          <button class="modal-close" id="closeModalBtn">&times;</button>
+          <iframe id="youtubeVideo" src="" allowfullscreen></iframe>
+        </div>
+      </div>
 
-                            </div>
+      <div class="mil-post-descr">
+        <h4 class="mil-up mil-mb-30">Your Stress-Free Travel Starts at the Airport</h4>
+        <p class="mil-post-text mil-up mil-mb-30">
+          Navigating busy airports can be overwhelming — especially if you're traveling for the first time, with family, or on a tight schedule.
+        </p>
+
+        <!-- Call for Book an Order -->
+        <div class="call-order-box mil-mb-30">
+          <div class="call-details">
+            <div class="call-info">
+                <p class="call-title">Call for book an order</p>
+                <span class="call-number">9895729922</span>
+            </div>
+            <a href="tel:9895729922" class="call-btn">✈ Book Now</a>
+          </div>
+        </div>
+
+        <h4 class="mil-up mil-mb-30">
+          <span class="mil-thin">At</span> Travello International,
+          <span class="mil-thin">we offer</span> personalized airport assistance services
+          <span class="mil-thin">to make your journey smooth from the moment you arrive at the terminal.</span>
+        </h4>
+
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
                             <div class="col-lg-12">
 
                                 <div class="mil-blog-card mil-blog-card-hori mil-mb-60">
@@ -792,6 +826,31 @@ experience convenience, care, and peace of mind from the start.</p>
     <script src="js/plugins/ScrollTo.min.js"></script>
     <!-- ashley js -->
     <script src="js/main.js"></script>
+
+    <!-- Modal Script -->
+  <script>
+    const openBtn = document.getElementById('openModalBtn');
+    const closeBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('videoModal');
+    const iframe = document.getElementById('youtubeVideo');
+
+    openBtn.addEventListener('click', function () {
+      iframe.src = "https://www.youtube.com/embed/9z3e59VhZvw?autoplay=1";
+      modal.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', function () {
+      modal.classList.remove('active');
+      iframe.src = "";
+    });
+
+    window.addEventListener('click', function (e) {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+        iframe.src = "";
+      }
+    });
+  </script>
 
 </body>
 
