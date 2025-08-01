@@ -4554,3 +4554,10 @@ p.service_text{
 .contact-info li{
   margin:  10px 0;
 }
+
+.assistance-pic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 500px;
+}
