@@ -4701,3 +4701,204 @@ p.service_text{
       color: black;
       font-weight: bold;
     }
+
+
+/***Privacy Policy***/
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .sidebar {
+      width: 250px;
+      position: sticky;
+      top: 20px;
+      padding-right: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin: 10px 0;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .content {
+      flex: 1;
+      background: var(--light-bg);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .privact-info h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 32px;
+      color: var(--accent);
+    }
+
+    .accordion {
+      margin-top: 20px;
+    }
+
+    details {
+      background: var(--section-bg);
+      margin-bottom: 10px;
+      padding: 15px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    summary {
+      font-size: 18px;
+      font-weight: bold;
+      outline: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .contact-box {
+      background: var(--highlight);
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+      color: #000;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: var(--section-bg);
+      border-bottom: 1px solid #ccc;
+    }
+
+    .topbar button {
+      padding: 8px 14px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .wrapper {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-right: 0;
+      }
+
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .topbar button {
+        margin-top: 10px;
+      }
+    }
+
+    .accordion ul{
+      padding-left: 50px;
+    }
+
+    /***Terms***/
+
+    .page-wrapper {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #222;
+      padding: 2rem;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: rgb(206, 165, 95);
+    }
+
+    .intro-text {
+      font-size: 1rem;
+      color: #555;
+      margin-top: 1rem;
+    }
+
+    .section {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-3px);
+    }
+
+    .section-heading {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: rgb(206, 165, 95);
+      margin-bottom: 0.8rem;
+    }
+
+    .section-list {
+      padding-left: 1rem;
+      color: #333;
+    }
+
+    .section-list-item {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+      list-style: square;
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+
+    @media (max-width: 600px) {
+      .page-wrapper {
+        padding: 1rem;
+      }
+
+      .title {
+        font-size: 2rem;
+      }
+
+      .section-heading {
+        font-size: 1.2rem;
+      }
+    }
