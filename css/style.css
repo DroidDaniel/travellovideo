@@ -4902,3 +4902,34 @@ p.service_text{
         font-size: 1.2rem;
       }
     }
+
+    /*************form validation***************/
+    .highlight{
+        border-bottom: solid 1px #FF0000;
+    }
+    
+    .error_msg{
+        color: #FF0000;
+        display: none;
+        transition: all .2s ease;
+        position: absolute;
+        top: -25px;
+    }
+
+    @media screen and (max-width:992px) {
+      .error_msg{
+        font-size: 13px;
+      } 
+    }
+
+    .success_msg{
+        color: #008000;
+        display: none;
+        transition: all .2s ease;
+        position: absolute;
+        top: -25px;
+    }
+
+    .contact_form{
+        position: relative;
+    }
