@@ -238,7 +238,13 @@ Reach out to Travello International — your trusted travel partner.</h4>
                 <section id="contact">
                     <div class="container mil-p-60-90">
                         <h3 class="mil-center mil-up mil-mb-120">Let's <span class="mil-thin">Talk</span></h3>
-                        <form class="row align-items-center contact_form">     
+                        <form 
+                         id="sp_form"
+                        action="https://docs.google.com/forms/u/0/d/1O-fS-hw_yuhoYs9VQv6O9JTTdRnd6Fxykfb3EiL95y4/previewResponse"
+                        method="POST"
+                        target="hidden_iframe"
+                        onsubmit="return false;"
+                        class="row align-items-center contact_form">     
                             <p class="error_msg">Please fill valid text in the highlighted fields</p>
                             <p class="success_msg">Your datas has been recieved!</p>
                             <div class="col-lg-6 mil-up">
@@ -267,6 +273,8 @@ Reach out to Travello International — your trusted travel partner.</h4>
                                 </div>
                             </div>
                         </form>
+                        <!-- Hidden iframe to prevent page reload -->
+                        <iframe name="hidden_iframe" style="display:none;"></iframe>
                     </div>
                 </section>
                 <!-- contact form end -->
