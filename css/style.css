@@ -5034,7 +5034,6 @@ p.service_text{
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      flex-shrink: 0;
       transition: background-color 0.3s ease;
     }
 
