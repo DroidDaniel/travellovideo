@@ -4993,6 +4993,14 @@ p.service_text{
       width: 100%;
     }
 
+    @media screen and (max-width: 867px) {
+        .card-footer {
+          width: 60%;
+          margin-left:auto;
+          margin-right:auto;
+        }
+    }
+
     .card-title-wrap {
       display: flex;
       flex-direction: column;
