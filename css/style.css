@@ -1446,11 +1446,11 @@ menu
     display: none;
   }
 }
-@media screen and (max-height: 800px) {
+/* @media screen and (max-height: 800px) {
   .mil-menu-frame .mil-menu-right-frame {
     display: none;
   }
-}
+} */
 .mil-menu-frame.mil-active {
   opacity: 1;
   pointer-events: all;
